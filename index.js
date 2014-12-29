@@ -5,7 +5,10 @@ var express = require("express"),
     app = express(),
     directory = require("serve-index");
 
-app.use(parser);
+app.use(parser.json());
+app.use(parser.urlencoded({
+  extended: true
+}));
 app.use(express.static(__dirname));
 app.use(directory(__dirname));
 
