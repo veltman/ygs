@@ -1,6 +1,6 @@
 {
   "name": "ygs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bare-bones HTTP server",
   "main": "index.js",
   "scripts": {
