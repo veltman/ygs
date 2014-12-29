@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
-var app = require("express")(),
+var express = require("express"),
+    app = express(),
     directory = require("serve-index");
 
 app.use(express.static(__dirname));
